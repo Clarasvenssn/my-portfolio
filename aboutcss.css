@@ -161,3 +161,45 @@ footer .text span a {
       width: 100%;
     }
 }
+
+
+@media screen and (max-width: 430px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .nav-container .links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 0;
+  }
+
+  .about-details img {
+    width: 380px;
+    height: auto;
+  }
+
+  .contact {
+    margin-top: 20px;
+  }
+  .contact .text {
+    width: 90%;
+  }
+  .contact button {
+    width: 80%;
+    height: 6vh;
+    margin: 30px auto;
+    font-size: 120%;
+  }
+
+  footer {
+    width: 100%;
+    padding: 15px 0;
+  }
+  footer .text {
+    font-size: 12px;
+  }
+}

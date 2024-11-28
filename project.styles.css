@@ -224,26 +224,50 @@ footer .text span a {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .forfun .box {
-        width: 100%;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    .title {
-        font-size: 20px;
-    }
-    .content button {
-        width: 90%;
-        margin: 20px auto;
-    }
-    section {
-        min-height: auto;
-        padding: 20px 0;
-    }
-    .header-img img {
-        width: 100%;
-        height: auto;
-    }
+
+@media screen and (max-width: 430px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .nav-container .links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 0;
+  }
+
+  .header-img {
+    width: 100%;
+  }
+
+  .services .boxes {
+    flex-direction: column;
+  }
+
+  .services .boxes .box,
+  .services .boxes .box-large {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .forfun .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contact .text {
+    width: 90%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .content button {
+    width: 80%;
+  }
 }

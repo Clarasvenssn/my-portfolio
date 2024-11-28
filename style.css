@@ -356,3 +356,67 @@ footer .text span a {
       width: 100%;
     }
 }
+
+@media screen and (max-width: 430px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .nav-container .links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 0;
+  }
+ 
+  .header .header-details {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .header-details .left,
+  .header-details .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .portfolio .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .skills-details {
+    flex-direction: column;
+  }
+  .skills-details .text,
+  .skills-details .boxes {
+    width: 100%;
+  }
+  .skills-details .box {
+    width: 100%;
+  }
+
+  .services .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+ 
+  .forfun .box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contact .text {
+    width: 90%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .content button {
+    width: 80%;
+  }
+}

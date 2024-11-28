@@ -128,6 +128,8 @@ footer {
   padding: 15px 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  margin-top: auto;
+    width: 100%;
 }
 footer .text span {
   font-size: 12px;
@@ -137,4 +139,110 @@ footer .text span {
 footer .text span a {
   font-weight: 500;
   color: white;
+}
+
+
+@media screen and (max-width: 430px) {
+  /* Navigation */
+  .nav-container {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .nav-container .links {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-container .links a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  /* Contact form */
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+  }
+
+  /* Content sections */
+  .content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* Buttons */
+  .content button {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 10px;
+  }
+
+  /* Spacing */
+  .padding {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .nav-container .links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 0;
+  }
+
+  .contact-form {
+    width: 380px;
+    margin: 0 auto;
+  }
+  .contact {
+    margin-top: 20px;
+  }
+  .contact .text {
+    width: 90%;
+  }
+  .contact button {
+    width: 80%;
+    height: 6vh;
+    margin: 30px auto;
+    font-size: 120%;
+  }
+
+@media screen and (max-width: 430px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1;
+  }
+  footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 15px 0;
+  }
+}
 }
