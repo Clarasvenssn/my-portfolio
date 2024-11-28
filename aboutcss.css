@@ -1,0 +1,163 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+.title {
+  font-size: 24px;
+}
+
+/*-------------------------------CUSTOM SCROLL BAR*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b74b4b;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+/*-------------------------------NAVBAR STYLING */
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b74b4b;
+}
+
+.nav-container .links {
+  display: flex;
+}
+.nav-container .links a {
+  position: relative;
+  font-size: 1.2rem;
+  color: black;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.3s linear;
+}
+.nav-container .links a::before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #b74b4b;
+  transition: 0.2s linear;
+}
+.nav-container .links a:hover::before {
+  width: 100%;
+}
+.nav-container .links a:hover {
+  color: #b74b4b;
+}
+
+
+/*---------------------------------------MAIN CONTAINTER*/
+section {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content button {
+  width: 50%;
+  height: 6vh;
+  margin: 30px;
+  background-color: #b74b4b;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 120%;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+.content button:hover {
+  scale: 1.1;
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+
+/-------------------------------ABOUT SECTION/
+.section .content { 
+    width: 80%; 
+    margin: 0px auto; 
+    font-family: "Poppins", sans-serif; 
+} 
+
+.about .about-details { 
+    display: flex; 
+    gap: 50px; 
+    align-items: center; 
+} 
+
+.about-details .right { 
+    width: 55%; 
+} 
+
+.content { 
+    color: black; 
+    width: 70%; 
+} 
+
+/*------------------------------------CONTACT ME*/
+.contact .text {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+
+/*------------------------------------FOOTER*/
+footer {
+  background: #b74b4b;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+footer .text span {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+footer .text span a {
+  font-weight: 500;
+  color: white;
+}
+
+
+/*------------------------------------------Responsive design */
+@media (max-width: 768px) {
+    .about-details {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%; 
+    }
+    .about .right{
+      width: 100%;
+    }
+    .contact .text {
+      width: 100%;
+    }
+}

@@ -1,0 +1,358 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+.title {
+  font-size: 24px;
+}
+
+/*-------------------------------CUSTOM SCROLL BAR*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b74b4b;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+
+/*-------------------------------NAVBAR STYLING */
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b74b4b;
+}
+
+.nav-container .links {
+  display: flex;
+}
+.nav-container .links a {
+  position: relative;
+  font-size: 1.2rem;
+  color: black;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.3s linear;
+}
+.nav-container .links a::before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #b74b4b;
+  transition: 0.2s linear;
+}
+.nav-container .links a:hover::before {
+  width: 100%;
+}
+.nav-container .links a:hover {
+  color: #b74b4b;
+}
+
+
+/*---------------------------------------MAIN CONTAINTER*/
+.content .typewriter {
+  font-size: clamp(1rem, 1rem + 5vw, 2.2rem);
+  font-weight: 600;
+}
+.content .typewriter-text {
+  color: #b74b4b;
+  display: inline;
+}
+.social-links i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.2rem solid #b74b4b;
+  border-radius: 50%;
+  color: #b74b4b;
+  margin: 5px 15px;
+  font-size: 1.5rem;
+  transition: 0.2s linear;
+}
+.social-links i:hover {
+  scale: 1.3;
+  color: #b74b4b;
+  background-color: #f0f0f0;
+}
+.content button {
+  width: 50%;
+  height: 6vh;
+  margin: 30px;
+  background-color: #b74b4b;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 120%;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+.content button:hover {
+  scale: 1.1;
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.header .header-details { 
+    display: flex; 
+    gap: 50px; 
+    align-items: center; 
+} 
+
+.header-details .right { 
+    width: 55%; 
+} 
+
+
+/*--------------------------------PORTFOLIO START*/
+.portfolio .topic{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.portfolio p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.portfolio .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.portfolio .box {
+  margin: 20;
+  width: calc(33% - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  cursor: default;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.portfolio .project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b74b4b;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.portfolio .box:hover .project-btn {
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+
+/*------------------------------------PÅVERKAR ALLT*/
+section {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px;
+}
+
+
+.content {
+  color: black;
+  width: 70%;
+}
+
+
+/*------------------------------SKILLS SECTION*/
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills-details .text {
+  width: 50%;
+}
+.skills .skills-details .experience {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.skills-details .experience .exp {
+  color: black;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+.skills-details .boxes {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills-details .box {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+.skills-details .boxes .per {
+  font-size: 60px;
+  color: #b74b4b;
+}
+.skills-details .boxes .per span {
+  font-size: 24px;
+  color: #b74b4b;
+}
+.num {
+  font-size: 70px;
+}
+
+
+/*---------------------------------------Services */
+.services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services .boxes .box {
+  margin: 20;
+  width: calc(33% - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  cursor: default;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #b74b4b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: white;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon {
+  background-color: white;
+  color: #b74b4b;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #b74b4b;
+  transition: all 0.4s ease;
+  color: #b74b4b;
+}
+
+
+/*-------------------------------------For Fun */
+.forfun .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.forfun .box {
+  margin: 20;
+  width: calc(33% - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  cursor: default;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+
+/*------------------------------------CONTACT ME*/
+.contact .text {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+
+/*------------------------------------FOOTER*/
+footer {
+  background: #b74b4b;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+footer .text span {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+footer .text span a {
+  font-weight: 500;
+  color: white;
+}
+
+
+/*------------------------------------------Responsive design */
+@media (max-width: 768px) {
+    .header .header-details {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .header-details .left {
+        width: 100%; 
+    }
+    .header-details .right {
+        width: 100%; 
+    }
+    .skills .skills-details {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    .skills .boxes{
+      width: 100%;
+    }
+    .skills .text {
+      width: 100%;
+    }
+    .contact .button {
+        width: 100%; /* Full width for buttons */
+        margin: 20px auto; 
+    }
+     .contact .text {
+      width: 100%;
+    }
+}

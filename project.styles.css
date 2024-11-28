@@ -1,0 +1,249 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 24px;
+}
+
+section {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px;
+}
+
+.content {
+  color: black;
+  width: 70%;
+}
+
+/*-------------------------------CUSTOM SCROLL BAR*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b74b4b;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/*-------------------------------NAVBAR STYLING */
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b74b4b;
+}
+
+.nav-container .links {
+  display: flex;
+}
+.nav-container .links a {
+  position: relative;
+  font-size: 1.2rem;
+  color: black;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.3s linear;
+}
+.nav-container .links a::before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #b74b4b;
+  transition: 0.2s linear;
+}
+.nav-container .links a:hover::before {
+  width: 100%;
+}
+.nav-container .links a:hover {
+  color: #b74b4b;
+}
+
+
+/*------------------------------------Button*/
+.content button {
+  width: 50%;
+  height: 6vh;
+  margin: 30px;
+  background-color: #b74b4b;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 120%;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+.content button:hover {
+  scale: 1.1;
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+
+/*---------------------------------- Info text */
+.services .boxes {
+  display: flex; 
+  /*justify-content: space-between; 
+  align-items: center; */
+}
+
+.services .boxes .box {
+  margin: 20px; 
+  width: calc(40% - 60px); 
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  cursor: default;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box-large {
+  width: calc(60% - 60px); 
+}
+
+.services .boxes .box:hover {
+  background: #b74b4b;
+  color: white;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: white;
+  transition: all 0.4s ease;
+}
+
+
+/*-------------------------------Images */
+.forfun .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.forfun .box {
+  margin: 20;
+  width: calc(33% - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  cursor: default;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+
+/*------------------------------------CONTACT ME*/
+.contact .text {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+
+/*------------------------------------FOOTER*/
+footer {
+  background: #b74b4b;
+  padding: 15px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+footer .text span {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+footer .text span a {
+  font-weight: 500;
+  color: white;
+}
+
+
+/*------------------------------------------Responsive design */
+@media screen and (max-width: 1024px) {
+    .content {
+        width: 85%;
+    }
+    .forfun .box {
+        width: calc(50% - 20px);
+    }
+    .services .boxes {
+        flex-direction: column;
+    }
+    .services .boxes .box,
+    .services .boxes .box-large {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        width: 95%;
+        padding: 10px;
+    }
+    .content {
+        width: 90%;
+    }
+    .content button {
+        width: 70%;
+    }
+    .contact .text {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .forfun .box {
+        width: 100%;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .content button {
+        width: 90%;
+        margin: 20px auto;
+    }
+    section {
+        min-height: auto;
+        padding: 20px 0;
+    }
+    .header-img img {
+        width: 100%;
+        height: auto;
+    }
+}
